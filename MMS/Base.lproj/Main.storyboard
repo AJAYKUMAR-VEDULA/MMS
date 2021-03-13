@@ -446,9 +446,35 @@
                     <view key="view" contentMode="scaleToFill" id="xCV-qr-ltE">
                         <rect key="frame" x="0.0" y="0.0" width="414" height="896"/>
                         <autoresizingMask key="autoresizingMask" widthSizable="YES" heightSizable="YES"/>
+                        <subviews>
+                            <collectionView clipsSubviews="YES" multipleTouchEnabled="YES" contentMode="scaleToFill" dataMode="prototypes" translatesAutoresizingMaskIntoConstraints="NO" id="iau-el-Knn">
+                                <rect key="frame" x="0.0" y="44" width="414" height="818"/>
+                                <color key="backgroundColor" systemColor="systemBackgroundColor"/>
+                                <collectionViewFlowLayout key="collectionViewLayout" minimumLineSpacing="10" minimumInteritemSpacing="10" id="hmn-zg-F3a">
+                                    <size key="itemSize" width="128" height="128"/>
+                                    <size key="headerReferenceSize" width="0.0" height="0.0"/>
+                                    <size key="footerReferenceSize" width="0.0" height="0.0"/>
+                                    <inset key="sectionInset" minX="0.0" minY="0.0" maxX="0.0" maxY="0.0"/>
+                                </collectionViewFlowLayout>
+                                <cells/>
+                                <connections>
+                                    <outlet property="dataSource" destination="Clt-NI-uVK" id="WmB-Ev-Byx"/>
+                                    <outlet property="delegate" destination="Clt-NI-uVK" id="ZIR-HZ-9gy"/>
+                                </connections>
+                            </collectionView>
+                        </subviews>
                         <viewLayoutGuide key="safeArea" id="kNh-GZ-MD5"/>
                         <color key="backgroundColor" systemColor="systemBackgroundColor"/>
+                        <constraints>
+                            <constraint firstItem="iau-el-Knn" firstAttribute="leading" secondItem="kNh-GZ-MD5" secondAttribute="leading" id="1X3-Sc-pFq"/>
+                            <constraint firstItem="kNh-GZ-MD5" firstAttribute="bottom" secondItem="iau-el-Knn" secondAttribute="bottom" id="PT0-KX-wi3"/>
+                            <constraint firstItem="kNh-GZ-MD5" firstAttribute="trailing" secondItem="iau-el-Knn" secondAttribute="trailing" id="Vcy-Hi-Q9L"/>
+                            <constraint firstItem="iau-el-Knn" firstAttribute="top" secondItem="kNh-GZ-MD5" secondAttribute="top" id="uJR-0z-u7v"/>
+                        </constraints>
                     </view>
+                    <connections>
+                        <outlet property="dashBoardCollectionView" destination="iau-el-Knn" id="QU6-DH-EMj"/>
+                    </connections>
                 </viewController>
                 <placeholder placeholderIdentifier="IBFirstResponder" id="U16-ny-4vO" userLabel="First Responder" customClass="UIResponder" sceneMemberID="firstResponder"/>
             </objects>

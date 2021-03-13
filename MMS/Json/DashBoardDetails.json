@@ -1,0 +1,69 @@
+{
+    "dashBoardSections" : [
+        {
+            "sectionHeader" : "Pending Status",
+            "subSections" : [
+                {
+                    "imageName" : "Invoice",
+                    "name" : "Invoice Pending",
+                    "value" : 0,
+                    "backgroundColor" : " "
+                },
+                {
+                    "imageName" : "StoreStock",
+                    "name" : "Store Stock Price",
+                    "value" : 6457138,
+                    "backgroundColor" : " "
+                },
+                {
+                    "imageName" : "WorkOrder",
+                    "name" : "Pending For WorkOrder",
+                    "value" : 1,
+                    "backgroundColor" : " "
+                },
+                {
+                    "imageName" : "Shortage",
+                    "name" : "Shortage of Items",
+                    "value" : 49,
+                    "backgroundColor" : " "
+                }
+            ]
+        },
+        {
+            "sectionHeader" : "Inbox Status",
+            "subSections" : [
+                {
+                    "imageName" : "Inbox",
+                    "name" : "Total Inbox item",
+                    "value" : 1141,
+                    "backgroundColor" : " "
+                },
+                {
+                    "imageName" : "Pending",
+                    "name" : "Pending For Approval",
+                    "value" : 19,
+                    "backgroundColor" : " "
+                },
+                {
+                    "imageName" : "Approved",
+                    "name" : "Approved",
+                    "value" : 1103,
+                    "backgroundColor" : " "
+                },
+                {
+                    "imageName" : "Rejected",
+                    "name" : "Rejected",
+                    "value" : 6,
+                    "backgroundColor" : " "
+                },
+                {
+                    "imageName" : "Rejected",
+                    "name" : "Rejected",
+                    "value" : 6,
+                    "backgroundColor" : " "
+                }
+            ]
+        }
+    ]
+}
+
