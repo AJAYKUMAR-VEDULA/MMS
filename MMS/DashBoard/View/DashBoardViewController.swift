@@ -10,7 +10,6 @@ import UIKit
 class DashBoardViewController: UIViewController {
 
     @IBOutlet weak var dashBoardCollectionView: UICollectionView!
-    var numberOfCell = 6
     var dashBoardDetails: DashBoardModel?
     var subSectionsCount: Int = 0
     override func viewDidLoad() {
@@ -38,12 +37,12 @@ class DashBoardViewController: UIViewController {
 
 extension DashBoardViewController : UICollectionViewDelegate, UICollectionViewDataSource {
     func numberOfSections(in collectionView: UICollectionView) -> Int {
-        return dashBoardDetails?.dashBoardSections.count ?? 0 //2
+        return dashBoardDetails?.dashBoardSections.count ?? 0
     }
     
     func collectionView(_ collectionView: UICollectionView, numberOfItemsInSection section: Int) -> Int {
-        subSectionsCount = dashBoardDetails?.dashBoardSections[section].subSections.count ?? 0//dashBoardDetails?.dashBoardSections[section].subSections.count ?? 0
-        return subSectionsCount + 1 //numberOfCell
+        subSectionsCount = dashBoardDetails?.dashBoardSections[section].subSections.count ?? 0
+        return subSectionsCount + 1
     }
     
     func collectionView(_ collectionView: UICollectionView, cellForItemAt indexPath: IndexPath) -> UICollectionViewCell {
@@ -57,6 +56,10 @@ extension DashBoardViewController : UICollectionViewDelegate, UICollectionViewDa
         let subSectionDetails = dashBoardDetails?.dashBoardSections[indexPath.section].subSections[indexPath.item-1]
         cell.setSubSectionData(data: subSectionDetails)
         return cell
+    }
+    
+    func collectionView(_ collectionView: UICollectionView, didSelectItemAt indexPath: IndexPath) {
+        print("Selected")
     }
 }
 

@@ -27,3 +27,64 @@ extension UIImageView {
         self.image = UIImage(named: named)
     }
 }
+
+
+extension UIColor {
+    class var lowGrey : UIColor {
+        return UIColor.rgb(r: 239, g: 239, b: 239)
+    }
+    class var peachGrey : UIColor {
+        return UIColor.rgb(r: 94, g: 138, b: 169)
+    }
+    class var greenGrey : UIColor {
+        return UIColor.rgb(r: 1, g: 139, b: 138)
+    }
+    class var babyPink : UIColor {
+        return UIColor.rgb(r: 206, g: 112, b: 174)
+    }
+    class var peachGreen : UIColor {
+        return UIColor.rgb(r: 164, g: 193, b: 171)
+    }
+    class var darkOrange : UIColor {
+        return UIColor.rgb(r: 202, g: 67, b: 10)
+    }
+    class var darkGreen : UIColor {
+        return UIColor.rgb(r: 126, g: 128, b: 1)
+    }
+    class var pale : UIColor {
+        return UIColor.rgb(r: 115, g: 135, b: 119)
+    }
+    class var darkPink : UIColor {
+        return UIColor.rgb(r: 141, g: 69, b: 132)
+    }
+    
+    class func rgb(r: CGFloat, g: CGFloat, b: CGFloat) -> UIColor {
+        return UIColor(red: r/255.0, green: g/255.0, blue: b/255.0, alpha: 1)
+    }
+    
+    class func getColorByCode(code: Int) -> UIColor {
+        switch code {
+        case 0:
+            return lowGrey
+        case 1:
+            return peachGrey
+        case 2:
+            return greenGrey
+        case 3:
+            return babyPink
+        case 4:
+            return peachGreen
+        case 5:
+            return darkOrange
+        case 6:
+            return darkGreen
+        case 7:
+            return pale
+        case 8:
+            return darkPink
+        default:
+            return blue
+        
+        }
+    }
+}

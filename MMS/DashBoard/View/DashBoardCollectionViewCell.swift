@@ -21,6 +21,6 @@ class DashBoardCollectionViewCell: UICollectionViewCell {
        // self.subSectionImageView.setImage(named: data.imageName)
         self.subSectionHeaderLabel.text = data?.headerName
         self.subSectionValueLabel.text = String(data?.value ?? 0)
-        //self.backgroundColor = UIColor.lightGray
+        self.backgroundColor = UIColor.getColorByCode(code: data?.backgroundColor ?? 0)
     }
 }

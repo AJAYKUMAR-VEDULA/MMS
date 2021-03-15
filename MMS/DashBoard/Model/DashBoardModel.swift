@@ -21,7 +21,7 @@ struct DashBoardSubSection: Codable {
     var imageName : String
     var headerName : String
     var value : Int
-    var backgroundColor : String
+    var backgroundColor : Int
     
     /// when the keys we recieve and we want to use be different.
     enum CodingKeys : String, CodingKey {

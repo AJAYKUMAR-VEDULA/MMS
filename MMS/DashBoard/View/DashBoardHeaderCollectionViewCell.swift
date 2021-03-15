@@ -17,7 +17,7 @@ class DashBoardHeaderCollectionViewCell: UICollectionViewCell {
     
     func setSectionHeaderData(sectionHeader: String) {
         self.sectionHeaderLabel.text = sectionHeader
-        self.backgroundViewLayer.backgroundColor = UIColor(red: 239/255.0, green: 239/255.0, blue: 239/255.0, alpha: 1)
+        self.backgroundViewLayer.backgroundColor = UIColor.getColorByCode(code: 0)
     }
 
 }
