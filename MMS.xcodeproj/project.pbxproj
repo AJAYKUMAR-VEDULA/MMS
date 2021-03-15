@@ -7,6 +7,14 @@
 	objects = {
 
 /* Begin PBXBuildFile section */
+		210EF2A325FCF73900043684 /* DashBoardModel.swift in Sources */ = {isa = PBXBuildFile; fileRef = 210EF2A225FCF73800043684 /* DashBoardModel.swift */; };
+		210EF2A825FCF91400043684 /* DashBoardViewModal.swift in Sources */ = {isa = PBXBuildFile; fileRef = 210EF2A725FCF91400043684 /* DashBoardViewModal.swift */; };
+		2124216525FD13500065E60E /* DashBoardDetails.json in Resources */ = {isa = PBXBuildFile; fileRef = 2124216425FD13500065E60E /* DashBoardDetails.json */; };
+		2124216C25FD1BC90065E60E /* JsonHelper.swift in Sources */ = {isa = PBXBuildFile; fileRef = 2124216B25FD1BC90065E60E /* JsonHelper.swift */; };
+		217F3C4425F37F8600827EB7 /* DashBoardCollectionViewCell.swift in Sources */ = {isa = PBXBuildFile; fileRef = 217F3C4225F37F8600827EB7 /* DashBoardCollectionViewCell.swift */; };
+		217F3C4525F37F8600827EB7 /* DashBoardCollectionViewCell.xib in Resources */ = {isa = PBXBuildFile; fileRef = 217F3C4325F37F8600827EB7 /* DashBoardCollectionViewCell.xib */; };
+		217F3C5425F3C3FF00827EB7 /* DashBoardHeaderCollectionViewCell.swift in Sources */ = {isa = PBXBuildFile; fileRef = 217F3C5225F3C3FF00827EB7 /* DashBoardHeaderCollectionViewCell.swift */; };
+		217F3C5525F3C3FF00827EB7 /* DashBoardHeaderCollectionViewCell.xib in Resources */ = {isa = PBXBuildFile; fileRef = 217F3C5325F3C3FF00827EB7 /* DashBoardHeaderCollectionViewCell.xib */; };
 		21ECA37E25ECB1CA00CD3D0B /* RegisterViewController.swift in Sources */ = {isa = PBXBuildFile; fileRef = 21ECA37D25ECB1CA00CD3D0B /* RegisterViewController.swift */; };
 		21ECA38925ED0C9A00CD3D0B /* DashBoardViewController.swift in Sources */ = {isa = PBXBuildFile; fileRef = 21ECA38825ED0C9A00CD3D0B /* DashBoardViewController.swift */; };
 		21FF030B25EBC62E00CCF64D /* AppDelegate.swift in Sources */ = {isa = PBXBuildFile; fileRef = 21FF030A25EBC62E00CCF64D /* AppDelegate.swift */; };
@@ -41,6 +49,14 @@
 /* End PBXContainerItemProxy section */
 
 /* Begin PBXFileReference section */
+		210EF2A225FCF73800043684 /* DashBoardModel.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = DashBoardModel.swift; sourceTree = "<group>"; };
+		210EF2A725FCF91400043684 /* DashBoardViewModal.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = DashBoardViewModal.swift; sourceTree = "<group>"; };
+		2124216425FD13500065E60E /* DashBoardDetails.json */ = {isa = PBXFileReference; lastKnownFileType = text.json; path = DashBoardDetails.json; sourceTree = "<group>"; };
+		2124216B25FD1BC90065E60E /* JsonHelper.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = JsonHelper.swift; sourceTree = "<group>"; };
+		217F3C4225F37F8600827EB7 /* DashBoardCollectionViewCell.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = DashBoardCollectionViewCell.swift; sourceTree = "<group>"; };
+		217F3C4325F37F8600827EB7 /* DashBoardCollectionViewCell.xib */ = {isa = PBXFileReference; lastKnownFileType = file.xib; path = DashBoardCollectionViewCell.xib; sourceTree = "<group>"; };
+		217F3C5225F3C3FF00827EB7 /* DashBoardHeaderCollectionViewCell.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = DashBoardHeaderCollectionViewCell.swift; sourceTree = "<group>"; };
+		217F3C5325F3C3FF00827EB7 /* DashBoardHeaderCollectionViewCell.xib */ = {isa = PBXFileReference; lastKnownFileType = file.xib; path = DashBoardHeaderCollectionViewCell.xib; sourceTree = "<group>"; };
 		21ECA37D25ECB1CA00CD3D0B /* RegisterViewController.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = RegisterViewController.swift; sourceTree = "<group>"; };
 		21ECA38825ED0C9A00CD3D0B /* DashBoardViewController.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = DashBoardViewController.swift; sourceTree = "<group>"; };
 		21FF030725EBC62E00CCF64D /* MMS.app */ = {isa = PBXFileReference; explicitFileType = wrapper.application; includeInIndex = 0; path = MMS.app; sourceTree = BUILT_PRODUCTS_DIR; };
@@ -88,10 +104,81 @@
 /* End PBXFrameworksBuildPhase section */
 
 /* Begin PBXGroup section */
+		210EF2AC25FD021B00043684 /* Model */ = {
+			isa = PBXGroup;
+			children = (
+				21FF034025EBC6BC00CCF64D /* LoginRegisterModel.swift */,
+			);
+			path = Model;
+			sourceTree = "<group>";
+		};
+		210EF2AD25FD022700043684 /* ViewModel */ = {
+			isa = PBXGroup;
+			children = (
+				21FF034825EBC87100CCF64D /* LoginViewModel.swift */,
+			);
+			path = ViewModel;
+			sourceTree = "<group>";
+		};
+		210EF2AE25FD026B00043684 /* View */ = {
+			isa = PBXGroup;
+			children = (
+				21FF030E25EBC62E00CCF64D /* LoginViewController.swift */,
+				21ECA37D25ECB1CA00CD3D0B /* RegisterViewController.swift */,
+			);
+			path = View;
+			sourceTree = "<group>";
+		};
+		210EF2AF25FD027F00043684 /* Model */ = {
+			isa = PBXGroup;
+			children = (
+				210EF2A225FCF73800043684 /* DashBoardModel.swift */,
+			);
+			path = Model;
+			sourceTree = "<group>";
+		};
+		210EF2B025FD028B00043684 /* View */ = {
+			isa = PBXGroup;
+			children = (
+				210EF2B525FD02B700043684 /* Xib */,
+				21ECA38825ED0C9A00CD3D0B /* DashBoardViewController.swift */,
+				217F3C4225F37F8600827EB7 /* DashBoardCollectionViewCell.swift */,
+				217F3C5225F3C3FF00827EB7 /* DashBoardHeaderCollectionViewCell.swift */,
+			);
+			path = View;
+			sourceTree = "<group>";
+		};
+		210EF2B425FD02A900043684 /* ViewModel */ = {
+			isa = PBXGroup;
+			children = (
+				210EF2A725FCF91400043684 /* DashBoardViewModal.swift */,
+			);
+			path = ViewModel;
+			sourceTree = "<group>";
+		};
+		210EF2B525FD02B700043684 /* Xib */ = {
+			isa = PBXGroup;
+			children = (
+				217F3C5325F3C3FF00827EB7 /* DashBoardHeaderCollectionViewCell.xib */,
+				217F3C4325F37F8600827EB7 /* DashBoardCollectionViewCell.xib */,
+			);
+			path = Xib;
+			sourceTree = "<group>";
+		};
+		2124216A25FD14FE0065E60E /* Json */ = {
+			isa = PBXGroup;
+			children = (
+				2124216425FD13500065E60E /* DashBoardDetails.json */,
+			);
+			path = Json;
+			sourceTree = "<group>";
+		};
 		21ECA38425ED0C2700CD3D0B /* DashBoard */ = {
 			isa = PBXGroup;
 			children = (
-				21ECA38825ED0C9A00CD3D0B /* DashBoardViewController.swift */,
+				210EF2B425FD02A900043684 /* ViewModel */,
+				210EF2B025FD028B00043684 /* View */,
+				210EF2AF25FD027F00043684 /* Model */,
 			);
 			path = DashBoard;
 			sourceTree = "<group>";
@@ -125,6 +212,7 @@
 				21ECA38425ED0C2700CD3D0B /* DashBoard */,
 				21FF035525EBE45500CCF64D /* Extensions */,
 				21FF035425EBE44700CCF64D /* Constants */,
+				2124216A25FD14FE0065E60E /* Json */,
 				21FF031025EBC62E00CCF64D /* Main.storyboard */,
 				21FF031325EBC63000CCF64D /* Assets.xcassets */,
 				21FF031525EBC63000CCF64D /* LaunchScreen.storyboard */,
@@ -163,6 +251,7 @@
 			isa = PBXGroup;
 			children = (
 				21FF035625EBE47500CCF64D /* Extensions.swift */,
+				2124216B25FD1BC90065E60E /* JsonHelper.swift */,
 			);
 			path = Extensions;
 			sourceTree = "<group>";
@@ -170,10 +259,9 @@
 		21FF035B25EBE55800CCF64D /* LoginRegister */ = {
 			isa = PBXGroup;
 			children = (
-				21FF034025EBC6BC00CCF64D /* LoginRegisterModel.swift */,
-				21FF034825EBC87100CCF64D /* LoginViewModel.swift */,
-				21FF030E25EBC62E00CCF64D /* LoginViewController.swift */,
-				21ECA37D25ECB1CA00CD3D0B /* RegisterViewController.swift */,
+				210EF2AD25FD022700043684 /* ViewModel */,
+				210EF2AE25FD026B00043684 /* View */,
+				210EF2AC25FD021B00043684 /* Model */,
 			);
 			path = LoginRegister;
 			sourceTree = "<group>";
@@ -284,6 +372,9 @@
 				21FF031725EBC63000CCF64D /* LaunchScreen.storyboard in Resources */,
 				21FF031425EBC63000CCF64D /* Assets.xcassets in Resources */,
 				21FF031225EBC62E00CCF64D /* Main.storyboard in Resources */,
+				217F3C4525F37F8600827EB7 /* DashBoardCollectionViewCell.xib in Resources */,
+				217F3C5525F3C3FF00827EB7 /* DashBoardHeaderCollectionViewCell.xib in Resources */,
+				2124216525FD13500065E60E /* DashBoardDetails.json in Resources */,
 			);
 			runOnlyForDeploymentPostprocessing = 0;
 		};
@@ -309,13 +400,18 @@
 			buildActionMask = 2147483647;
 			files = (
 				21ECA38925ED0C9A00CD3D0B /* DashBoardViewController.swift in Sources */,
+				217F3C5425F3C3FF00827EB7 /* DashBoardHeaderCollectionViewCell.swift in Sources */,
+				217F3C4425F37F8600827EB7 /* DashBoardCollectionViewCell.swift in Sources */,
+				2124216C25FD1BC90065E60E /* JsonHelper.swift in Sources */,
 				21FF030F25EBC62E00CCF64D /* LoginViewController.swift in Sources */,
 				21FF034F25EBDF6A00CCF64D /* AppConstants.swift in Sources */,
 				21FF034125EBC6BC00CCF64D /* LoginRegisterModel.swift in Sources */,
 				21ECA37E25ECB1CA00CD3D0B /* RegisterViewController.swift in Sources */,
 				21FF030B25EBC62E00CCF64D /* AppDelegate.swift in Sources */,
+				210EF2A325FCF73900043684 /* DashBoardModel.swift in Sources */,
 				21FF034925EBC87100CCF64D /* LoginViewModel.swift in Sources */,
 				21FF030D25EBC62E00CCF64D /* SceneDelegate.swift in Sources */,
+				210EF2A825FCF91400043684 /* DashBoardViewModal.swift in Sources */,
 				21FF035725EBE47500CCF64D /* Extensions.swift in Sources */,
 			);
 			runOnlyForDeploymentPostprocessing = 0;
