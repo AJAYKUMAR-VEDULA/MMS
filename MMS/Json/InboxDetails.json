@@ -1,0 +1,80 @@
+{
+    "dashBoardSections" : [
+        {
+            "sectionHeader" : "Transaction",
+            "hasNextlevel" : false,
+            "subSections" : [
+                {
+                    "imageName" : "",
+                    "name" : "Indent",
+                    "shortName" : "Ind",
+                    "value" : 0,
+                    "backgroundColor" : 9
+                },
+                {
+                    "imageName" : "",
+                    "name" : "Return Invoice",
+                    "shortName" : "Ri",
+                    "value" : 0,
+                    "backgroundColor" : 9
+                },
+                {
+                    "imageName" : "",
+                    "name" : "P and T",
+                    "shortName" : "p&t",
+                    "value" : 1,
+                    "backgroundColor" : 9
+                },
+                {
+                    "imageName" : "",
+                    "name" : "Return P and T",
+                    "shortName" : "RP",
+                    "value" : 0,
+                    "backgroundColor" : 9
+                },
+                {
+                    "imageName" : "",
+                    "name" : "Commissioning",
+                    "shortName" : "CR",
+                    "value" : 11,
+                    "backgroundColor" : 9
+                }
+            ]
+        },
+        {
+            "sectionHeader" : "Inter-Unit Transaction",
+            "hasNextlevel" : false,
+            "subSections" : [
+                {
+                    "imageName" : "",
+                    "name" : "Store Indent",
+                    "shortName" : "Si",
+                    "value" : 0,
+                    "backgroundColor" : 9
+                },
+                {
+                    "imageName" : "",
+                    "name" : "Pseudo StoreIndent",
+                    "shortName" : "Ps",
+                    "value" : 1,
+                    "backgroundColor" : 9
+                }
+            ]
+        },
+        {
+            "sectionHeader" : "Procurement",
+            "hasNextlevel" : false,
+            "subSections" : [
+                {
+                    "imageName" : "",
+                    "name" : "Dispatch Instruction",
+                    "shortName" : "Di",
+                    "value" : 0,
+                    "backgroundColor" : 9
+                }
+            ]
+        }
+    ]
+}
+
+

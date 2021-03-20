@@ -14,12 +14,14 @@ struct DashBoardModel: Codable {
 
 struct DashBoardSection: Codable {
     var sectionHeader : String
+    var hasNextlevel : Bool
     var subSections : [DashBoardSubSection]
 }
 
 struct DashBoardSubSection: Codable {
     var imageName : String
     var headerName : String
+    var shortName : String
     var value : Int
     var backgroundColor : Int
     
@@ -27,7 +29,13 @@ struct DashBoardSubSection: Codable {
     enum CodingKeys : String, CodingKey {
         case imageName = "imageName"
         case headerName = "name"
+        case shortName = "shortName"
         case value = "value"
         case backgroundColor = "backgroundColor"
     }
+}
+
+enum NavigationFlow {
+    case HomeDashBoard
+    case Inbox
 }

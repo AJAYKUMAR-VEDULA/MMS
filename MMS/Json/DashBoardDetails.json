@@ -2,28 +2,33 @@
     "dashBoardSections" : [
         {
             "sectionHeader" : "Pending Status",
+            "hasNextlevel" : false,
             "subSections" : [
                 {
                     "imageName" : "Invoice",
                     "name" : "Invoice Pending",
+                    "shortName" : "",
                     "value" : 0,
                     "backgroundColor" : 1
                 },
                 {
                     "imageName" : "StoreStock",
                     "name" : "Store Stock Price",
+                    "shortName" : "",
                     "value" : 6457138,
                     "backgroundColor" : 2
                 },
                 {
                     "imageName" : "WorkOrder",
                     "name" : "Pending For WorkOrder",
+                    "shortName" : "",
                     "value" : 1,
                     "backgroundColor" : 3
                 },
                 {
                     "imageName" : "Shortage",
                     "name" : "Shortage of Items",
+                    "shortName" : "",
                     "value" : 49,
                     "backgroundColor" : 4
                 }
@@ -31,28 +36,33 @@
         },
         {
             "sectionHeader" : "Inbox Status",
+            "hasNextlevel" : true,
             "subSections" : [
                 {
                     "imageName" : "Inbox",
                     "name" : "Total Inbox item",
+                    "shortName" : "",
                     "value" : 1141,
                     "backgroundColor" : 5
                 },
                 {
                     "imageName" : "Pending",
                     "name" : "Pending For Approval",
+                    "shortName" : "",
                     "value" : 19,
                     "backgroundColor" : 6
                 },
                 {
                     "imageName" : "Approved",
                     "name" : "Approved",
+                    "shortName" : "",
                     "value" : 1103,
                     "backgroundColor" : 7
                 },
                 {
                     "imageName" : "Rejected",
                     "name" : "Rejected",
+                    "shortName" : "",
                     "value" : 6,
                     "backgroundColor" : 8
                 }
