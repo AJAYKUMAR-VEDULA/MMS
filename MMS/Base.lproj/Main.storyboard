@@ -480,6 +480,47 @@
             </objects>
             <point key="canvasLocation" x="3127" y="75"/>
         </scene>
+        <!--Inbox View Controller-->
+        <scene sceneID="IQ1-9M-5Za">
+            <objects>
+                <viewController storyboardIdentifier="inboxViewController" id="r3w-Sz-q3T" customClass="InboxViewController" customModule="MMS" customModuleProvider="target" sceneMemberID="viewController">
+                    <view key="view" contentMode="scaleToFill" id="vDx-np-Wsp">
+                        <rect key="frame" x="0.0" y="0.0" width="414" height="896"/>
+                        <autoresizingMask key="autoresizingMask" widthSizable="YES" heightSizable="YES"/>
+                        <subviews>
+                            <collectionView clipsSubviews="YES" multipleTouchEnabled="YES" contentMode="scaleToFill" dataMode="prototypes" translatesAutoresizingMaskIntoConstraints="NO" id="5Qf-c8-ZoW">
+                                <rect key="frame" x="0.0" y="44" width="414" height="818"/>
+                                <color key="backgroundColor" systemColor="systemBackgroundColor"/>
+                                <collectionViewFlowLayout key="collectionViewLayout" minimumLineSpacing="10" minimumInteritemSpacing="10" id="Alh-9B-6Mt">
+                                    <size key="itemSize" width="128" height="128"/>
+                                    <size key="headerReferenceSize" width="0.0" height="0.0"/>
+                                    <size key="footerReferenceSize" width="0.0" height="0.0"/>
+                                    <inset key="sectionInset" minX="0.0" minY="0.0" maxX="0.0" maxY="0.0"/>
+                                </collectionViewFlowLayout>
+                                <cells/>
+                                <connections>
+                                    <outlet property="dataSource" destination="r3w-Sz-q3T" id="yQH-rj-lNM"/>
+                                    <outlet property="delegate" destination="r3w-Sz-q3T" id="qwY-vP-GCb"/>
+                                </connections>
+                            </collectionView>
+                        </subviews>
+                        <viewLayoutGuide key="safeArea" id="6TD-hz-X19"/>
+                        <color key="backgroundColor" systemColor="systemBackgroundColor"/>
+                        <constraints>
+                            <constraint firstItem="5Qf-c8-ZoW" firstAttribute="top" secondItem="6TD-hz-X19" secondAttribute="top" id="2Az-LD-rIx"/>
+                            <constraint firstItem="6TD-hz-X19" firstAttribute="trailing" secondItem="5Qf-c8-ZoW" secondAttribute="trailing" id="XWW-vW-QuY"/>
+                            <constraint firstItem="6TD-hz-X19" firstAttribute="bottom" secondItem="5Qf-c8-ZoW" secondAttribute="bottom" id="YN3-hG-oBE"/>
+                            <constraint firstItem="5Qf-c8-ZoW" firstAttribute="leading" secondItem="6TD-hz-X19" secondAttribute="leading" id="Yh2-Xr-lne"/>
+                        </constraints>
+                    </view>
+                    <connections>
+                        <outlet property="inboxCollectionView" destination="5Qf-c8-ZoW" id="rDK-yr-3L8"/>
+                    </connections>
+                </viewController>
+                <placeholder placeholderIdentifier="IBFirstResponder" id="oPr-U5-AYo" userLabel="First Responder" customClass="UIResponder" sceneMemberID="firstResponder"/>
+            </objects>
+            <point key="canvasLocation" x="3846" y="75"/>
+        </scene>
         <!--Navigation Controller-->
         <scene sceneID="C4V-Rh-JuG">
             <objects>
@@ -489,6 +530,7 @@
                         <rect key="frame" x="0.0" y="44" width="414" height="44"/>
                         <autoresizingMask key="autoresizingMask"/>
                         <color key="backgroundColor" systemColor="systemBlueColor"/>
+                        <color key="tintColor" white="1" alpha="1" colorSpace="custom" customColorSpace="genericGamma22GrayColorSpace"/>
                         <color key="barTintColor" name="AccentColor"/>
                     </navigationBar>
                     <nil name="viewControllers"/>
@@ -498,7 +540,7 @@
                 </navigationController>
                 <placeholder placeholderIdentifier="IBFirstResponder" id="79U-va-Kul" userLabel="First Responder" customClass="UIResponder" sceneMemberID="firstResponder"/>
             </objects>
-            <point key="canvasLocation" x="621.73913043478262" y="73.660714285714278"/>
+            <point key="canvasLocation" x="690" y="75"/>
         </scene>
     </scenes>
     <resources>

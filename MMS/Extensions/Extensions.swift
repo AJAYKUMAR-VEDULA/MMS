@@ -20,6 +20,10 @@ extension UIView {
         self.layer.borderColor = borderColor
         self.layer.borderWidth = borderWidth
     }
+    
+    func circle() {
+        self.layer.cornerRadius = self.frame.size.width/2
+    }
 }
 
 extension UIImageView {
@@ -28,6 +32,11 @@ extension UIImageView {
     }
 }
 
+extension UICollectionView {
+    func registerNibs(nibName: String, cellReuseIdentifier: String) {
+        self.register(UINib(nibName: nibName, bundle: nil), forCellWithReuseIdentifier: cellReuseIdentifier)
+    }
+}
 
 extension UIColor {
     class var lowGrey : UIColor {
@@ -57,6 +66,12 @@ extension UIColor {
     class var darkPink : UIColor {
         return UIColor.rgb(r: 141, g: 69, b: 132)
     }
+    class var darkNavyBlue : UIColor {
+        return UIColor.rgb(r: 24, g: 86, b: 138)
+    }
+    class var darkBlackBlue : UIColor {
+        return UIColor.rgb(r: 14, g: 53, b: 86)
+    }
     
     class func rgb(r: CGFloat, g: CGFloat, b: CGFloat) -> UIColor {
         return UIColor(red: r/255.0, green: g/255.0, blue: b/255.0, alpha: 1)
@@ -82,6 +97,8 @@ extension UIColor {
             return pale
         case 8:
             return darkPink
+        case 9:
+            return darkNavyBlue
         default:
             return blue
         
