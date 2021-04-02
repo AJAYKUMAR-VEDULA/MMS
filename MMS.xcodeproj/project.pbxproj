@@ -11,6 +11,9 @@
 		210EF2A825FCF91400043684 /* DashBoardViewModal.swift in Sources */ = {isa = PBXBuildFile; fileRef = 210EF2A725FCF91400043684 /* DashBoardViewModal.swift */; };
 		2124216525FD13500065E60E /* DashBoardDetails.json in Resources */ = {isa = PBXBuildFile; fileRef = 2124216425FD13500065E60E /* DashBoardDetails.json */; };
 		2124216C25FD1BC90065E60E /* JsonHelper.swift in Sources */ = {isa = PBXBuildFile; fileRef = 2124216B25FD1BC90065E60E /* JsonHelper.swift */; };
+		2137BEF02617948600A46AA3 /* ApprovalInboxDetails.json in Resources */ = {isa = PBXBuildFile; fileRef = 2137BEEF2617948600A46AA3 /* ApprovalInboxDetails.json */; };
+		2137BEF526179A9600A46AA3 /* ApprovalInboxViewModel.swift in Sources */ = {isa = PBXBuildFile; fileRef = 2137BEF426179A9600A46AA3 /* ApprovalInboxViewModel.swift */; };
+		2163E9DE261196CA005EBB7F /* ApprovalInboxViewController.swift in Sources */ = {isa = PBXBuildFile; fileRef = 2163E9DD261196CA005EBB7F /* ApprovalInboxViewController.swift */; };
 		217F3C4425F37F8600827EB7 /* DashBoardCollectionViewCell.swift in Sources */ = {isa = PBXBuildFile; fileRef = 217F3C4225F37F8600827EB7 /* DashBoardCollectionViewCell.swift */; };
 		217F3C4525F37F8600827EB7 /* DashBoardCollectionViewCell.xib in Resources */ = {isa = PBXBuildFile; fileRef = 217F3C4325F37F8600827EB7 /* DashBoardCollectionViewCell.xib */; };
 		217F3C5425F3C3FF00827EB7 /* DashBoardHeaderCollectionViewCell.swift in Sources */ = {isa = PBXBuildFile; fileRef = 217F3C5225F3C3FF00827EB7 /* DashBoardHeaderCollectionViewCell.swift */; };
@@ -19,6 +22,9 @@
 		218FAF292605D73F00250E4C /* InboxViewController.swift in Sources */ = {isa = PBXBuildFile; fileRef = 218FAF282605D73F00250E4C /* InboxViewController.swift */; };
 		21ECA37E25ECB1CA00CD3D0B /* RegisterViewController.swift in Sources */ = {isa = PBXBuildFile; fileRef = 21ECA37D25ECB1CA00CD3D0B /* RegisterViewController.swift */; };
 		21ECA38925ED0C9A00CD3D0B /* DashBoardViewController.swift in Sources */ = {isa = PBXBuildFile; fileRef = 21ECA38825ED0C9A00CD3D0B /* DashBoardViewController.swift */; };
+		21FE9D3B2611983700E84DB1 /* ApprovalInboxModel.swift in Sources */ = {isa = PBXBuildFile; fileRef = 21FE9D3A2611983700E84DB1 /* ApprovalInboxModel.swift */; };
+		21FE9D4126119C4600E84DB1 /* ApprovalInboxTableViewCell.swift in Sources */ = {isa = PBXBuildFile; fileRef = 21FE9D3F26119C4600E84DB1 /* ApprovalInboxTableViewCell.swift */; };
+		21FE9D4226119C4600E84DB1 /* ApprovalInboxTableViewCell.xib in Resources */ = {isa = PBXBuildFile; fileRef = 21FE9D4026119C4600E84DB1 /* ApprovalInboxTableViewCell.xib */; };
 		21FF030B25EBC62E00CCF64D /* AppDelegate.swift in Sources */ = {isa = PBXBuildFile; fileRef = 21FF030A25EBC62E00CCF64D /* AppDelegate.swift */; };
 		21FF030D25EBC62E00CCF64D /* SceneDelegate.swift in Sources */ = {isa = PBXBuildFile; fileRef = 21FF030C25EBC62E00CCF64D /* SceneDelegate.swift */; };
 		21FF030F25EBC62E00CCF64D /* LoginViewController.swift in Sources */ = {isa = PBXBuildFile; fileRef = 21FF030E25EBC62E00CCF64D /* LoginViewController.swift */; };
@@ -55,6 +61,9 @@
 		210EF2A725FCF91400043684 /* DashBoardViewModal.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = DashBoardViewModal.swift; sourceTree = "<group>"; };
 		2124216425FD13500065E60E /* DashBoardDetails.json */ = {isa = PBXFileReference; lastKnownFileType = text.json; path = DashBoardDetails.json; sourceTree = "<group>"; };
 		2124216B25FD1BC90065E60E /* JsonHelper.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = JsonHelper.swift; sourceTree = "<group>"; };
+		2137BEEF2617948600A46AA3 /* ApprovalInboxDetails.json */ = {isa = PBXFileReference; lastKnownFileType = text.json; path = ApprovalInboxDetails.json; sourceTree = "<group>"; };
+		2137BEF426179A9600A46AA3 /* ApprovalInboxViewModel.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = ApprovalInboxViewModel.swift; sourceTree = "<group>"; };
+		2163E9DD261196CA005EBB7F /* ApprovalInboxViewController.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = ApprovalInboxViewController.swift; sourceTree = "<group>"; };
 		217F3C4225F37F8600827EB7 /* DashBoardCollectionViewCell.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = DashBoardCollectionViewCell.swift; sourceTree = "<group>"; };
 		217F3C4325F37F8600827EB7 /* DashBoardCollectionViewCell.xib */ = {isa = PBXFileReference; lastKnownFileType = file.xib; path = DashBoardCollectionViewCell.xib; sourceTree = "<group>"; };
 		217F3C5225F3C3FF00827EB7 /* DashBoardHeaderCollectionViewCell.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = DashBoardHeaderCollectionViewCell.swift; sourceTree = "<group>"; };
@@ -63,6 +72,9 @@
 		218FAF282605D73F00250E4C /* InboxViewController.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = InboxViewController.swift; sourceTree = "<group>"; };
 		21ECA37D25ECB1CA00CD3D0B /* RegisterViewController.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = RegisterViewController.swift; sourceTree = "<group>"; };
 		21ECA38825ED0C9A00CD3D0B /* DashBoardViewController.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = DashBoardViewController.swift; sourceTree = "<group>"; };
+		21FE9D3A2611983700E84DB1 /* ApprovalInboxModel.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = ApprovalInboxModel.swift; sourceTree = "<group>"; };
+		21FE9D3F26119C4600E84DB1 /* ApprovalInboxTableViewCell.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = ApprovalInboxTableViewCell.swift; sourceTree = "<group>"; };
+		21FE9D4026119C4600E84DB1 /* ApprovalInboxTableViewCell.xib */ = {isa = PBXFileReference; lastKnownFileType = file.xib; path = ApprovalInboxTableViewCell.xib; sourceTree = "<group>"; };
 		21FF030725EBC62E00CCF64D /* MMS.app */ = {isa = PBXFileReference; explicitFileType = wrapper.application; includeInIndex = 0; path = MMS.app; sourceTree = BUILT_PRODUCTS_DIR; };
 		21FF030A25EBC62E00CCF64D /* AppDelegate.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = AppDelegate.swift; sourceTree = "<group>"; };
 		21FF030C25EBC62E00CCF64D /* SceneDelegate.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = SceneDelegate.swift; sourceTree = "<group>"; };
@@ -174,8 +186,19 @@
 			children = (
 				2124216425FD13500065E60E /* DashBoardDetails.json */,
 				218FAF232605CF1200250E4C /* InboxDetails.json */,
+				2137BEEF2617948600A46AA3 /* ApprovalInboxDetails.json */,
 			);
 			path = Json;
+			sourceTree = "<group>";
+		};
+		2163E9DC261196A2005EBB7F /* ApprovalInbox */ = {
+			isa = PBXGroup;
+			children = (
+				21FE9D392611980900E84DB1 /* View */,
+				21FE9D382611980100E84DB1 /* ViewModel */,
+				21FE9D37261197F900E84DB1 /* Model */,
+			);
+			path = ApprovalInbox;
 			sourceTree = "<group>";
 		};
 		218FAF1F2605C99100250E4C /* Inbox */ = {
@@ -194,6 +217,32 @@
 				210EF2AF25FD027F00043684 /* Model */,
 			);
 			path = DashBoard;
+			sourceTree = "<group>";
+		};
+		21FE9D37261197F900E84DB1 /* Model */ = {
+			isa = PBXGroup;
+			children = (
+				21FE9D3A2611983700E84DB1 /* ApprovalInboxModel.swift */,
+			);
+			path = Model;
+			sourceTree = "<group>";
+		};
+		21FE9D382611980100E84DB1 /* ViewModel */ = {
+			isa = PBXGroup;
+			children = (
+				2137BEF426179A9600A46AA3 /* ApprovalInboxViewModel.swift */,
+			);
+			path = ViewModel;
+			sourceTree = "<group>";
+		};
+		21FE9D392611980900E84DB1 /* View */ = {
+			isa = PBXGroup;
+			children = (
+				2163E9DD261196CA005EBB7F /* ApprovalInboxViewController.swift */,
+				21FE9D3F26119C4600E84DB1 /* ApprovalInboxTableViewCell.swift */,
+				21FE9D4026119C4600E84DB1 /* ApprovalInboxTableViewCell.xib */,
+			);
+			path = View;
 			sourceTree = "<group>";
 		};
 		21FF02FE25EBC62E00CCF64D = {
@@ -223,6 +272,7 @@
 				21FF030C25EBC62E00CCF64D /* SceneDelegate.swift */,
 				21FF035B25EBE55800CCF64D /* LoginRegister */,
 				21ECA38425ED0C2700CD3D0B /* DashBoard */,
+				2163E9DC261196A2005EBB7F /* ApprovalInbox */,
 				218FAF1F2605C99100250E4C /* Inbox */,
 				21FF035525EBE45500CCF64D /* Extensions */,
 				21FF035425EBE44700CCF64D /* Constants */,
@@ -388,8 +438,10 @@
 				21FF031225EBC62E00CCF64D /* Main.storyboard in Resources */,
 				217F3C4525F37F8600827EB7 /* DashBoardCollectionViewCell.xib in Resources */,
 				217F3C5525F3C3FF00827EB7 /* DashBoardHeaderCollectionViewCell.xib in Resources */,
+				2137BEF02617948600A46AA3 /* ApprovalInboxDetails.json in Resources */,
 				218FAF242605CF1200250E4C /* InboxDetails.json in Resources */,
 				2124216525FD13500065E60E /* DashBoardDetails.json in Resources */,
+				21FE9D4226119C4600E84DB1 /* ApprovalInboxTableViewCell.xib in Resources */,
 			);
 			runOnlyForDeploymentPostprocessing = 0;
 		};
@@ -414,8 +466,11 @@
 			isa = PBXSourcesBuildPhase;
 			buildActionMask = 2147483647;
 			files = (
+				2163E9DE261196CA005EBB7F /* ApprovalInboxViewController.swift in Sources */,
 				21ECA38925ED0C9A00CD3D0B /* DashBoardViewController.swift in Sources */,
+				21FE9D4126119C4600E84DB1 /* ApprovalInboxTableViewCell.swift in Sources */,
 				217F3C5425F3C3FF00827EB7 /* DashBoardHeaderCollectionViewCell.swift in Sources */,
+				2137BEF526179A9600A46AA3 /* ApprovalInboxViewModel.swift in Sources */,
 				217F3C4425F37F8600827EB7 /* DashBoardCollectionViewCell.swift in Sources */,
 				2124216C25FD1BC90065E60E /* JsonHelper.swift in Sources */,
 				21FF030F25EBC62E00CCF64D /* LoginViewController.swift in Sources */,
@@ -423,6 +478,7 @@
 				21FF034125EBC6BC00CCF64D /* LoginRegisterModel.swift in Sources */,
 				21ECA37E25ECB1CA00CD3D0B /* RegisterViewController.swift in Sources */,
 				21FF030B25EBC62E00CCF64D /* AppDelegate.swift in Sources */,
+				21FE9D3B2611983700E84DB1 /* ApprovalInboxModel.swift in Sources */,
 				210EF2A325FCF73900043684 /* DashBoardModel.swift in Sources */,
 				218FAF292605D73F00250E4C /* InboxViewController.swift in Sources */,
 				21FF034925EBC87100CCF64D /* LoginViewModel.swift in Sources */,

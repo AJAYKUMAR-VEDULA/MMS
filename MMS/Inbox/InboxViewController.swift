@@ -13,13 +13,9 @@ class InboxViewController: UIViewController {
     var subSectionsCount: Int = 0
     override func viewDidLoad() {
         super.viewDidLoad()
-        inboxDetails = JsonHelper().getDataFromJson(jsonResourceName: "InboxDetails", data: DashBoardModel.self)
+        inboxDetails = JsonHelper().getDataFromJson(jsonResourceName: AppConstants.inboxDetails, data: DashBoardModel.self)
         registerCells()
         // Do any additional setup after loading the view.
-    }
-    
-    override func viewWillAppear(_ animated: Bool) {
-
     }
     
     fileprivate func registerCells() {
@@ -53,6 +49,10 @@ extension InboxViewController : UICollectionViewDelegate, UICollectionViewDataSo
     
     func collectionView(_ collectionView: UICollectionView, didSelectItemAt indexPath: IndexPath) {
         print("Selected")
+        guard let inboxViewController  = self.storyboard?.instantiateViewController(identifier: AppConstants.approvalInboxVCIdentifier) as? ApprovalInboxViewController else {
+            return
+        }
+        self.navigationController?.pushViewController(inboxViewController, animated: true)
     }
 }
 
@@ -71,8 +71,6 @@ extension InboxViewController : UICollectionViewDelegateFlowLayout {
     
     func collectionView(_ collectionView: UICollectionView, layout collectionViewLayout: UICollectionViewLayout,
                         insetForSectionAt section: Int) -> UIEdgeInsets {
-        let cellWidthPadding: CGFloat = collectionView.frame.size.width / AppConstants.dashBoardSectionWidthPaddingFraction
-        let cellHeightPadding: CGFloat = AppConstants.dashBoardSectionsHeightPadding
-        return UIEdgeInsets(top: cellHeightPadding,left: cellWidthPadding, bottom: cellHeightPadding,right: cellWidthPadding)
+        return AppConstants.sectionPadding
     }
 }

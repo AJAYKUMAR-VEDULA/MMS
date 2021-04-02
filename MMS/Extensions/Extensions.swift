@@ -24,6 +24,13 @@ extension UIView {
     func circle() {
         self.layer.cornerRadius = self.frame.size.width/2
     }
+    
+    func shadow(color: UIColor, opacity: Float, offset: CGSize, radius: CGFloat) {
+        self.layer.shadowColor = color.cgColor
+        self.layer.shadowOpacity = opacity
+        self.layer.shadowOffset = offset
+        self.layer.shadowRadius = radius
+    }
 }
 
 extension UIImageView {
@@ -35,6 +42,12 @@ extension UIImageView {
 extension UICollectionView {
     func registerNibs(nibName: String, cellReuseIdentifier: String) {
         self.register(UINib(nibName: nibName, bundle: nil), forCellWithReuseIdentifier: cellReuseIdentifier)
+    }
+}
+
+extension UITableView {
+    func registerNibs(nibName: String, cellReuseIdentifier: String) {
+        self.register(UINib(nibName: nibName, bundle: nil), forCellReuseIdentifier: cellReuseIdentifier)
     }
 }
 
@@ -71,6 +84,12 @@ extension UIColor {
     }
     class var darkBlackBlue : UIColor {
         return UIColor.rgb(r: 14, g: 53, b: 86)
+    }
+    class var paleRed : UIColor {
+        return UIColor.rgb(r: 175, g: 17, b: 21)
+    }
+    class var shadowGrey : UIColor {
+        return UIColor.rgb(r: 196, g: 196, b: 196)
     }
     
     class func rgb(r: CGFloat, g: CGFloat, b: CGFloat) -> UIColor {
