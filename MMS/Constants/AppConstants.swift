@@ -9,6 +9,10 @@ import Foundation
 import UIKit
 
 open class AppConstants {
+    //Json Files
+    public static let dshBoardDetails = "DashBoardDetails"
+    public static let inboxDetails = "InboxDetails"
+    public static let approvalInboxDetails = "ApprovalInboxDetails"
     // Login Page Constants
     public static let textFieldBorderWidth : CGFloat = 1
     public static let userNamePlcaeHolder = "Enter Username"
@@ -32,6 +36,9 @@ open class AppConstants {
     public static let dashBoardCVCIdentifier = "dashBoardCollectionCell"
     public static let dashBoardHeaderCollectionViewCell = "DashBoardHeaderCollectionViewCell"
     public static let dashBoardHCVCIdentifier = "dashBoardHeaderCell"
+    public static let approvalInboxVCIdentifier = "ApprovalInboxVC"
+    public static let approvalInboxTableViewCellIdentifier = "approvalInboxCell"
+    public static let approvalInboxTableViewCell = "ApprovalInboxTableViewCell"
     public static let firstIndexPath = 0
     public static let collectionViewCellHeight: CGFloat = 100
     public static let fractionOfTwo: CGFloat = 2
@@ -39,4 +46,5 @@ open class AppConstants {
     public static let dashBoardSectionWidthPaddingFraction: CGFloat = 25
     public static let dashBoardCVCFullWithConstraint: CGFloat = 30
     public static let dashBoardCVCHalfWidthConstraint: CGFloat = 40
+    public static let sectionPadding: UIEdgeInsets = UIEdgeInsets(top: 10,left: 10, bottom: 0,right: 20)
 }

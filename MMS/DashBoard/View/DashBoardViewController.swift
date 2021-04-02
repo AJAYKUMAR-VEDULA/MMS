@@ -15,7 +15,7 @@ class DashBoardViewController: UIViewController {
     override func viewDidLoad() {
         super.viewDidLoad()
         registerCells()
-        dashBoardDetails = JsonHelper().getDataFromJson(jsonResourceName: "DashBoardDetails", data: DashBoardModel.self)
+        dashBoardDetails = JsonHelper().getDataFromJson(jsonResourceName: AppConstants.dshBoardDetails, data: DashBoardModel.self)
         // Do any additional setup after loading the view.
     }
     override func viewWillAppear(_ animated: Bool) {
@@ -76,8 +76,6 @@ extension DashBoardViewController : UICollectionViewDelegateFlowLayout {
     
     func collectionView(_ collectionView: UICollectionView, layout collectionViewLayout: UICollectionViewLayout,
                         insetForSectionAt section: Int) -> UIEdgeInsets {
-        let cellWidthPadding: CGFloat = collectionView.frame.size.width / AppConstants.dashBoardSectionWidthPaddingFraction
-        let cellHeightPadding: CGFloat = AppConstants.dashBoardSectionsHeightPadding
-        return UIEdgeInsets(top: cellHeightPadding,left: cellWidthPadding, bottom: cellHeightPadding,right: cellWidthPadding)
+        return AppConstants.sectionPadding
     }
 }
