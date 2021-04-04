@@ -21,6 +21,12 @@ extension UIView {
         self.layer.borderWidth = borderWidth
     }
     
+    func roundedBorder(_ cornerRadius: CGFloat, _ borderColor: CGColor, _ borderWidth: CGFloat) {
+        self.layer.cornerRadius = cornerRadius
+        self.layer.borderColor = borderColor
+        self.layer.borderWidth = borderWidth
+    }
+    
     func circle() {
         self.layer.cornerRadius = self.frame.size.width/2
     }
