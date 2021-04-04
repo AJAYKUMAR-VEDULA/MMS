@@ -10,6 +10,16 @@ import UIKit
 class ApprovalInboxViewController: UIViewController {
     @IBOutlet weak var inboxTableView: UITableView!
     @IBOutlet weak var approvalInboxSelectionView: UIView!
+    @IBOutlet weak var searchView: UIView!
+    @IBOutlet var searchDeatilBackgroungView: UIView!
+    @IBOutlet weak var searchDeatilsView: UIView!
+    @IBOutlet weak var searchByWorkLabel: UILabel!
+    @IBOutlet weak var searchByNameLabel: UILabel!
+    @IBOutlet weak var dateFromLabel: UILabel!
+    @IBOutlet weak var dateToLabel: UILabel!
+    @IBOutlet weak var seachButtonView: UIView!
+    @IBOutlet weak var closeImageView: UIImageView!
+    @IBOutlet weak var searchButtonView: UIView!
     var approvalInboxDetails : ApprovalInboxSectionModel?
     override func viewDidLoad() {
         super.viewDidLoad()
@@ -20,12 +30,33 @@ class ApprovalInboxViewController: UIViewController {
     }
     
     func configureView() {
+        searchDeatilBackgroungView.isHidden = true
+        searchDeatilsView.isHidden = true
+        searchView.circle()
         approvalInboxSelectionView.backgroundColor = UIColor.rgb(r: 250, g: 250, b: 250)
         inboxTableView.backgroundColor =  UIColor.lowGrey
+        searchView.addGestureRecognizer(UITapGestureRecognizer(target: self, action: #selector(tapOfSearch)))
+        closeImageView.addGestureRecognizer(UITapGestureRecognizer(target: self, action: #selector(tapOfClose)))
+        searchButtonView.addGestureRecognizer(UITapGestureRecognizer(target: self, action: #selector(tapOfClose)))
+        searchByWorkLabel.roundedBorder(5, UIColor.black.cgColor, 1)
+        searchByNameLabel.roundedBorder(5, UIColor.black.cgColor, 1)
+        dateFromLabel.roundedBorder(5, UIColor.black.cgColor, 1)
+        dateToLabel.roundedBorder(5, UIColor.black.cgColor, 1)
+        seachButtonView.roundedBorder(borderColor: UIColor.white.cgColor, borderWidth: 0)
     }
     
     func registerCells() {
         self.inboxTableView.registerNibs(nibName: AppConstants.approvalInboxTableViewCell, cellReuseIdentifier: AppConstants.approvalInboxTableViewCellIdentifier)
+    }
+    
+    @objc func tapOfSearch() {
+        searchDeatilBackgroungView.isHidden = false
+        searchDeatilsView.isHidden = false
+    }
+    
+    @objc func tapOfClose() {
+        searchDeatilBackgroungView.isHidden = true
+        searchDeatilsView.isHidden = true
     }
 }
 
