@@ -26,6 +26,7 @@ class ApprovalInboxViewController: UIViewController {
         registerCells()
         configureView()
         approvalInboxDetails = JsonHelper().getDataFromJson(jsonResourceName: AppConstants.approvalInboxDetails, data: ApprovalInboxSectionModel.self)
+        self.title = "Approval Inbox"
         // Do any additional setup after loading the view.
     }
     
