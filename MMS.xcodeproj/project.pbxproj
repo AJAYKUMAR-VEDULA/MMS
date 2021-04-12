@@ -13,6 +13,8 @@
 		2124216C25FD1BC90065E60E /* JsonHelper.swift in Sources */ = {isa = PBXBuildFile; fileRef = 2124216B25FD1BC90065E60E /* JsonHelper.swift */; };
 		2137BEF02617948600A46AA3 /* ApprovalInboxDetails.json in Resources */ = {isa = PBXBuildFile; fileRef = 2137BEEF2617948600A46AA3 /* ApprovalInboxDetails.json */; };
 		2137BEF526179A9600A46AA3 /* ApprovalInboxViewModel.swift in Sources */ = {isa = PBXBuildFile; fileRef = 2137BEF426179A9600A46AA3 /* ApprovalInboxViewModel.swift */; };
+		214D2F972624B7D800EA778B /* MenuWallTableViewCell.swift in Sources */ = {isa = PBXBuildFile; fileRef = 214D2F952624B7D800EA778B /* MenuWallTableViewCell.swift */; };
+		214D2F982624B7D800EA778B /* MenuWallTableViewCell.xib in Resources */ = {isa = PBXBuildFile; fileRef = 214D2F962624B7D800EA778B /* MenuWallTableViewCell.xib */; };
 		2163E9DE261196CA005EBB7F /* ApprovalInboxViewController.swift in Sources */ = {isa = PBXBuildFile; fileRef = 2163E9DD261196CA005EBB7F /* ApprovalInboxViewController.swift */; };
 		217F3C4425F37F8600827EB7 /* DashBoardCollectionViewCell.swift in Sources */ = {isa = PBXBuildFile; fileRef = 217F3C4225F37F8600827EB7 /* DashBoardCollectionViewCell.swift */; };
 		217F3C4525F37F8600827EB7 /* DashBoardCollectionViewCell.xib in Resources */ = {isa = PBXBuildFile; fileRef = 217F3C4325F37F8600827EB7 /* DashBoardCollectionViewCell.xib */; };
@@ -63,6 +65,8 @@
 		2124216B25FD1BC90065E60E /* JsonHelper.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = JsonHelper.swift; sourceTree = "<group>"; };
 		2137BEEF2617948600A46AA3 /* ApprovalInboxDetails.json */ = {isa = PBXFileReference; lastKnownFileType = text.json; path = ApprovalInboxDetails.json; sourceTree = "<group>"; };
 		2137BEF426179A9600A46AA3 /* ApprovalInboxViewModel.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = ApprovalInboxViewModel.swift; sourceTree = "<group>"; };
+		214D2F952624B7D800EA778B /* MenuWallTableViewCell.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = MenuWallTableViewCell.swift; sourceTree = "<group>"; };
+		214D2F962624B7D800EA778B /* MenuWallTableViewCell.xib */ = {isa = PBXFileReference; lastKnownFileType = file.xib; path = MenuWallTableViewCell.xib; sourceTree = "<group>"; };
 		2163E9DD261196CA005EBB7F /* ApprovalInboxViewController.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = ApprovalInboxViewController.swift; sourceTree = "<group>"; };
 		217F3C4225F37F8600827EB7 /* DashBoardCollectionViewCell.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = DashBoardCollectionViewCell.swift; sourceTree = "<group>"; };
 		217F3C4325F37F8600827EB7 /* DashBoardCollectionViewCell.xib */ = {isa = PBXFileReference; lastKnownFileType = file.xib; path = DashBoardCollectionViewCell.xib; sourceTree = "<group>"; };
@@ -158,6 +162,7 @@
 			children = (
 				210EF2B525FD02B700043684 /* Xib */,
 				21ECA38825ED0C9A00CD3D0B /* DashBoardViewController.swift */,
+				214D2F952624B7D800EA778B /* MenuWallTableViewCell.swift */,
 				217F3C4225F37F8600827EB7 /* DashBoardCollectionViewCell.swift */,
 				217F3C5225F3C3FF00827EB7 /* DashBoardHeaderCollectionViewCell.swift */,
 			);
@@ -177,6 +182,7 @@
 			children = (
 				217F3C5325F3C3FF00827EB7 /* DashBoardHeaderCollectionViewCell.xib */,
 				217F3C4325F37F8600827EB7 /* DashBoardCollectionViewCell.xib */,
+				214D2F962624B7D800EA778B /* MenuWallTableViewCell.xib */,
 			);
 			path = Xib;
 			sourceTree = "<group>";
@@ -437,6 +443,7 @@
 				21FF031425EBC63000CCF64D /* Assets.xcassets in Resources */,
 				21FF031225EBC62E00CCF64D /* Main.storyboard in Resources */,
 				217F3C4525F37F8600827EB7 /* DashBoardCollectionViewCell.xib in Resources */,
+				214D2F982624B7D800EA778B /* MenuWallTableViewCell.xib in Resources */,
 				217F3C5525F3C3FF00827EB7 /* DashBoardHeaderCollectionViewCell.xib in Resources */,
 				2137BEF02617948600A46AA3 /* ApprovalInboxDetails.json in Resources */,
 				218FAF242605CF1200250E4C /* InboxDetails.json in Resources */,
@@ -472,6 +479,7 @@
 				217F3C5425F3C3FF00827EB7 /* DashBoardHeaderCollectionViewCell.swift in Sources */,
 				2137BEF526179A9600A46AA3 /* ApprovalInboxViewModel.swift in Sources */,
 				217F3C4425F37F8600827EB7 /* DashBoardCollectionViewCell.swift in Sources */,
+				214D2F972624B7D800EA778B /* MenuWallTableViewCell.swift in Sources */,
 				2124216C25FD1BC90065E60E /* JsonHelper.swift in Sources */,
 				21FF030F25EBC62E00CCF64D /* LoginViewController.swift in Sources */,
 				21FF034F25EBDF6A00CCF64D /* AppConstants.swift in Sources */,

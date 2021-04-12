@@ -15,6 +15,7 @@ class InboxViewController: UIViewController {
         super.viewDidLoad()
         inboxDetails = JsonHelper().getDataFromJson(jsonResourceName: AppConstants.inboxDetails, data: DashBoardModel.self)
         registerCells()
+        self.title = "Inbox View"
         // Do any additional setup after loading the view.
     }
     
